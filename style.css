@@ -21,7 +21,7 @@ table th img{
 }
 
 
-.bottom__line{
+/* .bottom__line{
     border-bottom: 2px solid lightgrey !important;
 }
 
@@ -31,14 +31,21 @@ table th img{
 
 th {
     border: 2px solid lightgrey;
-}
+} */
 
 td {
-    border: 2px solid lightgrey;
+    /* border: 2px solid lightgrey; */
     border-top: none !important;
     border-bottom: none !important;
 }
 
 .outlined {
-    border: 1px solid blue !important;
+    border: 2px solid lightgrey !important;
+    border-radius: 0.5rem;
+    border-collapse: separate;
+    padding-right: 0.5rem;
+}
+
+col{
+    border-radius: 25px;
 }
