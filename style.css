@@ -1,10 +1,120 @@
-.table{
+/* media queries */
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+} 
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    /* color: #212529; */
+    text-align: left;
+    background-color: #fff;
+}
+
+table{
+    /* display: table; */
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 1rem;
+    border-color: grey;
+    font-variant: normal;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table tbody {
+    text-align: center;
+}
+
+.tableau td,
+.tableau th {
+    padding: 0.75rem;
+    vertical-align: top;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.tableau thead th {
+    vertical-align: bottom;
+}
+
+
+.tableau {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
     font-family: 'Montserrat', sans-serif !important; 
-  /* border: 1px solid black;   */
-  /* border-style: groove !important; */
+}
+
+.text__style{
+    text-transform: uppercase !important;
+    color: #6c757d !important;
+}
+
+
+.tableau-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
 }
 
 table th{
+    vertical-align: bottom;
     border-bottom: none !important;
 }
 
@@ -14,10 +124,18 @@ table tbody{
 
 table th{
     text-align: center;
+    border-top: none !important;
 }
 
 table th img{
     bottom: 0;
+}
+.tableau-responsive{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 
@@ -35,17 +153,11 @@ th {
 
 td {
     /* border: 2px solid lightgrey; */
+    display: table-cell;
     border-top: none !important;
     border-bottom: none !important;
 }
 
 .outlined {
     border: 2px solid lightgrey !important;
-    border-radius: 0.5rem;
-    border-collapse: separate;
-    padding-right: 0.5rem;
-}
-
-col{
-    border-radius: 25px;
 }
