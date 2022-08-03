@@ -4,25 +4,49 @@
     .container{
         max-width: 1140px;
     }
+        .col_img {
+            display: inline-block;
+            margin-bottom: 0.5rem !important;
+        }
 }
 
 @media (max-width: 992px){
     .container {
         max-width: 960px;
     }
+        .col_img {
+            display: inline-block;
+            margin-bottom: 0.5rem !important;
+        }
 } 
 
 @media (max-width: 768px) {
     .container {
         max-width: 720px;
     }
+        .col_img {
+            display: inline-block;
+            margin-bottom: 0.5rem !important;
+        }
 }
 
 @media (max-width: 576px) {
     .container {
         max-width: 540px;
     }
+        .col_img {
+            display: inline-block;
+            margin-bottom: 0.5rem !important;
+        }
 }
+
+@media(min-width: 1570px){
+    .col_img {
+        margin-bottom: 2.8rem !important;
+    }
+}
+
+
 
 .container {
     width: 100%;
@@ -76,7 +100,7 @@ table tbody {
 .tableau td,
 .tableau th {
     padding: 0.75rem;
-    vertical-align: top;
+    vertical-align: bottom;
 }
 tr {
     display: table-row;
@@ -113,23 +137,10 @@ tr {
     box-sizing: border-box;
 }
 
-table th{
-    vertical-align: bottom;
-    border-bottom: none !important;
-}
-
 table tbody{
     text-align: center;
 }
 
-table th{
-    text-align: center;
-    border-top: none !important;
-}
-
-table th img{
-    bottom: 0;
-}
 .tableau-responsive{
     display: block;
     width: 100%;
@@ -139,25 +150,34 @@ table th img{
 }
 
 
-/* .bottom__line{
+.bottom__line{
     border-bottom: 2px solid lightgrey !important;
 }
 
-#top__border{
-    border-top: 2px solid lightgrey !important;
-}
 
 th {
-    border: 2px solid lightgrey;
-} */
+    border-left: 2px solid lightgrey;
+    border-right: 2px solid lightgrey;
+    border-top: 2px solid lightgrey;
+}
 
 td {
-    /* border: 2px solid lightgrey; */
+    border: 2px solid lightgrey;
+    border-spacing: 0px;
     display: table-cell;
     border-top: none !important;
     border-bottom: none !important;
 }
 
-.outlined {
-    border: 2px solid lightgrey !important;
+.figure-img {
+    margin-bottom: 0.5rem !important;
+    line-height: 1 !important;
 }
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.outlined{
+    /* border: 2px solid lightgrey; */
+}  
